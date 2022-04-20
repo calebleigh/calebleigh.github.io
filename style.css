@@ -1,6 +1,11 @@
+:root{
+  --color1: #d53369;
+  --color2: #daae51;
+}
+
 html, body{
 overflow-x: hidden;
-cursor: none;
+/* cursor: none; */
 }
 .bg-gray-900{
     background-color: #292E34;
@@ -17,7 +22,7 @@ cursor: none;
 }
 .dropdown-menu>li>a:hover {
     text-decoration: none;
-    background-color: #daae51;
+    background-color: var(--color2);
  }
  .mb-n2 {
   margin-bottom: -5em !important;
@@ -36,7 +41,7 @@ cursor: none;
 # Landing Section
 --------------------------------------------------------------*/
  .gradient-orange{
-    background: linear-gradient(45deg, #d53369 0%, #daae51 100%);
+    background: linear-gradient(45deg, var(--color1) 0%, var(--color2) 100%);
     position: relative;
  }
  .gradient-orange::after{
@@ -51,7 +56,7 @@ cursor: none;
   transform: skewY(2deg);
  }
  .text-gradient{
-    background: -webkit-linear-gradient(45deg, #d53369 0%, #daae51 100%);
+    background: -webkit-linear-gradient(45deg, var(--color1) 0%, var(--color2) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;;
@@ -66,7 +71,7 @@ cursor: none;
   }
 
   .footer{
-    background: linear-gradient(45deg, #d53369 0%, #daae51 100%);
+    background: linear-gradient(45deg, var(--color1) 0%, var(--color2) 100%);
     position: relative;
  }
  .footer::before{
@@ -80,35 +85,6 @@ cursor: none;
   transform-origin: right top;
   transform: skewY(2deg);
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -134,17 +110,17 @@ cursor: none;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: -webkit-linear-gradient(45deg, #d53369 0%, #daae51 100%);
+  background: -webkit-linear-gradient(45deg, var(--color1) 0%, var(--color2) 100%);
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:  -webkit-linear-gradient(45deg, #d53369 0%, #daae51 100%);
+  background:  -webkit-linear-gradient(45deg, var(--color1) 0%, var(--color2) 100%);
 }
 
  /*--------------------------------------------------------------
 # Cursor
 --------------------------------------------------------------*/  
- .circle{
+ /* .circle{
     position:absolute;
     background: white;
     opacity:1; 
@@ -179,4 +155,4 @@ div.active { animation:fade .5s ease; }
     
     100%{ transform: translate(-50%,-50%) scale(2); opacity:0; }
     0%{ transform: translate(-50%,-50%) scale(1); opacity:1; }
-  } 
+  }  */
