@@ -5,7 +5,6 @@
 
 html, body{
 overflow-x: hidden;
-/* cursor: none; */
 }
 .bg-gray-900{
     background-color: #292E34;
@@ -87,13 +86,25 @@ overflow-x: hidden;
  }
 
 
-
-
-
-
-
-
-
+ img{
+	max-width: 100%;
+}
+.gallery{
+	padding: 80px 0;
+}
+.gallery img{
+	background-color: #3A444E;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}
+.modal-open{
+  padding-right: 0px !important; 
+}
 
 
  /*--------------------------------------------------------------
@@ -116,43 +127,3 @@ overflow-x: hidden;
 ::-webkit-scrollbar-thumb:hover {
   background:  -webkit-linear-gradient(45deg, var(--color1) 0%, var(--color2) 100%);
 }
-
- /*--------------------------------------------------------------
-# Cursor
---------------------------------------------------------------*/  
- /* .circle{
-    position:absolute;
-    background: white;
-    opacity:1; 
-    border-radius:50px;
-    width: 5px;
-    height: 5px;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%) scale(1);  
-    z-index: 10000;
-    user-select: none;
-    pointer-events: none;
-  }
-.circle2{
-    position:absolute;
-    opacity:1;  
-    -moz-border-radius: 30px/30px;
-    -webkit-border-radius: 30px 30px;
-    border-radius: 30px/30px;
-    border: solid 2px white;
-    width: 30px;
-    height: 30px;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%) scale(1);  
-    z-index: 10000;
-    user-select: none;
-    pointer-events: none;
-  } 
-div.active { animation:fade .5s ease; }
-  @keyframes fade {
-    
-    100%{ transform: translate(-50%,-50%) scale(2); opacity:0; }
-    0%{ transform: translate(-50%,-50%) scale(1); opacity:1; }
-  }  */
