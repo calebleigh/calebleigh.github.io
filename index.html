@@ -47,8 +47,11 @@
               <a class="nav-link active a" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#code">Code</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#design">Design</a>
+              </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -64,13 +67,13 @@
                 class="dropdown-menu bg-gray-900"
                 aria-labelledby="navbarDropdown"
               >
-                <li><a class="dropdown-item text-light" href="#">Action</a></li>
                 <li>
                   <a class="dropdown-item text-light" href="#"
-                    >Another action</a
+                    >Gradient Selector</a
                   >
                 </li>
                 <li><hr class="dropdown-divider text-light align-items-center" /></li>
+                <li>
                     <div class="d-flex m-auto align-items-center justify-content-center">
                         <input type="color" class="color1 m-1" value="#d53369">
                         <input type="color" class="color2 m-1" value="#daae51">
@@ -87,43 +90,39 @@
     <div class="container-fluid bg-white gradient-orange">
       <div class="row w-100">
           
-        <div class="col-lg-7">
-            <img class="w-100" style="transform: scale(1.5); margin-top: 5rem; pointer-events: none" src="/img/landing-image.png" />
+        <div id="parallax1" class="col-lg-7">
+            <img data-depth="0.05" style="margin-top: 5rem; pointer-events: none" src="/img/landing-image.png" />
           </div>
 
         <div class="col-lg-5 p-5  d-flex align-items-center justify-content-center">
           <div class="mt-lg-4">
             <div>
-              <span class="text-white ms-1 lead">Welcome to new landing page of</span>
+              <span class="text-white ms-1 lead">Left brain meets right brain.</span>
             </div>
             <h2 class="text-white mb-4 mt-3 h1">
               Caleb Lee
             </h2>
 
-            <p class="mb-4 font-16 text-white lead">
-              Hyper is a fully featured dashboard and admin template comes with
-              tones of well designed UI elements, components, widgets and pages.
+            <p class="mb-4 text-white h4">
+              aslkdfjakdsfj;alk sdfjakd jflaksdfhlkajdhflkaj sdhflakjdshflkajsdhasd asdasd asd asd asd asdas d asdflkajdhf <br><br> fdjahdsl fjhalsdkjfha skdjfhals dkjfhlaksjdfhlasjdf hlaksjdfhlaksjdfhl
             </p>
 
-            <a href="" target="_blank" class="btn btn-dark bg-gray-900"
-              ><i class="text-blue bi bi-facebook"></i>
-            </a>
-            <a href="" target="_blank" class="btn btn-dark bg-gray-900"
+            <a href="https://www.linkedin.com/in/caleb-lee-90a545122/" target="https://www.linkedin.com/in/caleb-lee-90a545122/" class="btn btn-dark bg-gray-900"
             ><i class="text-blue bi bi-linkedin"></i>
             </a>
-            <a href="" target="_blank" class="btn btn-dark bg-gray-900"
+            <a href="https://github.com/calebleigh" target="https://github.com/calebleigh" class="btn btn-dark bg-gray-900"
             ><i class="text-blue bi bi-github"></i>
             </a>
-            <a href="" target="_blank" class="btn btn-dark bg-gray-900"
-            ><i class="text-blue bi bi-google"></i>
-          </a>
+            <a href="https://www.facebook.com/Calebsleigh/" target="https://www.facebook.com/Calebsleigh/" class="btn btn-dark bg-gray-900"
+            ><i class="text-blue bi bi-facebook"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- CODE SECTION -->
-    <div class="container-fluid buffer py-5 p-5">
+    <div id="code" class="container-fluid buffer py-5 p-5 reveal">
         <div class="row py-4">
             <div class="col-lg-12">
                 <div class="text-center text-white">
@@ -263,7 +262,7 @@
     </div>
 
     <!-- CODE PROJECTS -->
-    <section class="pb-5">
+    <section class="pb-5 reveal">
         <div class="container-fluid ps-5 pe-5">
             <div class="row">
                 <div class="col-lg-12">
@@ -303,7 +302,7 @@
     </section>
    
     <!-- DESIGN SECTION -->
-    <div class="container-fluid">
+    <div id="design" class="container-fluid reveal">
       <div class="row w-100 py-5">
 
         <div class="col-lg-5 p-5 d-flex align-items-center justify-content-center">
@@ -324,8 +323,8 @@
               </p>
           </div>
         </div> 
-        <div class="col-lg-7">
-            <img class="w-100" style="transform: scale(1.1);" src="/img/responsive.png" />
+        <div id="parallax2" class="col-lg-7">
+            <img class="w-100 parallax" data-depth="0.05" style="transform: scale(1.1);" src="/img/responsive.png" />
           </div>
 
 
@@ -333,7 +332,7 @@
     </div>
 
     <!-- DESIGN PROJECTS -->
-    <section class="py-5 mt-n2">
+    <section class="py-5 mt-n2 reveal">
       <div class="container-fluid px-5">
           <div class="row">
               <div class="col-lg-12">
@@ -438,46 +437,45 @@
 
                 <div class="w-100 row gy-4 row-cols-2 row-cols-md-4 row-cols-lg-6">
                     <div class="col">
-                        <img src="img/CJCode2.png" class="gallery-item p-5" alt="gallery">
+                        <img src="img/CJCode2.png" class="gallery-item p-5 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/Mr13 smol.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/Mr13 smol.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/LDG transparent.png" class="gallery-item p-5" alt="gallery">
+                        <img src="img/LDG transparent.png" class="gallery-item p-5 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/DemiNerd.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/DemiNerd.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/Anaklusmus2.0.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/Anaklusmus2.0.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/LTS.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/LTS.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/FreedomFencesq.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/FreedomFencesq.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/TomahawkFoxTransparent.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/TomahawkFoxTransparent.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/Spyre.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/Spyre.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/MrRogDiscord.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/MrRogDiscord.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/AscendUtah.png" class="gallery-item p-0" alt="gallery">
+                        <img src="img/AscendUtah.png" class="gallery-item p-0 hover" alt="gallery">
                     </div>
                     <div class="col">
-                        <img src="img/Rafter K Hollow Transparent.png" class="gallery-item p-0 bg-white" alt="gallery">
+                        <img src="img/Rafter K Hollow Transparent.png" class="gallery-item p-0 bg-white hover" alt="gallery">
                     </div>
 
                 </div>
             </div>
         </section>           
-
 
         <!-- Modal -->
         <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -578,6 +576,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+       var scene = document.getElementById('parallax1');
+        var parallaxInstance = new Parallax(scene);
+        var scene = document.getElementById('parallax2');
+        var parallaxInstance = new Parallax(scene);
+     </script>
   </body>
 </html>

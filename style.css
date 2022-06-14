@@ -6,6 +6,9 @@
 html, body{
 overflow-x: hidden;
 }
+#parallax1{
+  transform: scale(1.5) !important;
+}
 .bg-gray-900{
     background-color: #292E34;
 }
@@ -106,6 +109,18 @@ overflow-x: hidden;
   padding-right: 0px !important; 
 }
 
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: .8s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
  /*--------------------------------------------------------------
 # Scroll Bar
