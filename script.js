@@ -39,3 +39,18 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.backgroundColor = "#292E34";
+    document.getElementById("navbar").style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)";
+  } else {
+    document.getElementById("navbar").style.backgroundColor = "#daaf5100";
+    document.getElementById("navbar").style.boxShadow = "none";
+  }
+}

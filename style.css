@@ -21,10 +21,13 @@ overflow-x: hidden;
 }
 .navbar{
     z-index: 1000;
+    background-color: #daaf5100;
+    transition: 0.3s;
+    box-shadow: none;
 }
 .dropdown-menu>li>a:hover {
     text-decoration: none;
-    background-color: var(--color2);
+    background-color: #292E34;
  }
  .mb-n2 {
   margin-bottom: -5em !important;
