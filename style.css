@@ -41,7 +41,12 @@ overflow-x: hidden;
 .socials{
   z-index: 100000;
 }
-
+#modalButton{
+  background: linear-gradient(45deg, var(--color1) 0%, var(--color2) 100%);
+}
+#submitButton{
+  background: linear-gradient(45deg, var(--color1) 0%, var(--color2) 100%);
+}
  /*--------------------------------------------------------------
 # Landing Section
 --------------------------------------------------------------*/

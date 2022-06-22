@@ -29,7 +29,7 @@
         </a>
 
 
-        <button class="btn btn-primary btn-lg modal-button" data-toggle="modal">Launch demo modal</button>
+        <button id="modalButton" class="btn btn-sm modal-button text-light mx-3" data-toggle="modal">Contact Me</button>
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -43,47 +43,33 @@
                         <div class="container py-4">
 
                             <!-- Bootstrap 5 starter form -->
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN"
+                            <form id="contactForm"
                             
                             action="https://formspree.io/f/mknyajyd"
-                            method="post"
+                            method="POST"
                             >
                           
                               <!-- Name input -->
                               <div class="mb-3">
                                 <label class="form-label text-light" for="name">Name</label>
-                                <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Name" required />
                               </div>
                           
                               <!-- Email address input -->
                               <div class="mb-3">
                                 <label class="form-label text-light" for="emailAddress">Email Address</label>
-                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
-                                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                                <input class="form-control" id="emailAddress" type="email" name="email" placeholder="Email Address" required />
                               </div>
                           
                               <!-- Message input -->
                               <div class="mb-3">
                                 <label class="form-label text-light" for="message">Message</label>
-                                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-                              </div>
-                          
-                              <!-- Form submissions success message -->
-                              <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 text-light">Thanks for contacting me! I look forward to chatting.</div>
-                              </div>
-                          
-                              <!-- Form submissions error message -->
-                              <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                                <textarea class="form-control" id="message"  name="message" type="text" placeholder="Message" style="height: 10rem;" required></textarea>
                               </div>
                           
                               <!-- Form submit button -->
                               <div class="d-grid">
-                                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                                <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
                               </div>
                           
                             </form>
@@ -344,9 +330,9 @@
     </div>
 
     <!-- DESIGN PROJECTS -->
-    <section class="py-3 mt-n2 reveal">
+    <section class="py-5 mt-n2 reveal">
       <div class="container-fluid px-5">
-          <div class="row pb-5">
+          <div class="row py-5">
 
             <div class="col-lg-4 col-md-6">
                 <div class="text-center p-2 p-sm-3">
@@ -549,7 +535,7 @@
 
                   <ul class="list-unstyled ps-0 mb-0 mt-3">
                       <li class="mt-2"><a href="https://jperm.net/3x3" class="text-white">Rubik's Cube Guide</a></li>
-                      <li class="mt-2"><a href="https://www.pathofexile.com" class="text-white">My current favorite game</a></li>
+                      <li class="mt-2"><a href="https://www.pathofexile.com" class="text-white">Favorite game</a></li>
                       <li class="mt-2"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-white">Awesome Youtube Video</a></li>
                   </ul>
               </div>
@@ -570,8 +556,6 @@
 
 
 
-<!-- SB Forms JS -->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
