@@ -111,7 +111,9 @@ overflow-x: hidden;
 .modal-open{
   padding-right: 0px !important; 
 }
-
+.modal-backdrop{
+  z-index: 0;
+}
 
 .reveal{
   position: relative;

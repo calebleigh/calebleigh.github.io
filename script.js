@@ -20,6 +20,12 @@ document.addEventListener("click",function (e){
       myModal.show();
   }
 })
+document.addEventListener("click",function (e){
+  if(e.target.classList.contains("modal-button")){
+      const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+      myModal.show();
+  }
+})
 
 
 function reveal() {
